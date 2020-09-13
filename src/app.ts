@@ -1,19 +1,6 @@
-class Invoice {
-    client: string;
-    details: string;
-    amount: number;
-
-    constructor(client: string, details: string, amount: number){
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-
-    format(){
-        return `${this.client} owes ${this.amount} for ${this.details}`;
-    }
-};
-
+import {Invoice} from './classes/Invoice.js';
+import {Payment} from './classes/Payment.js';
+import {HasFormatter} from './interfaces/HasFormatter';
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
@@ -25,5 +12,13 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault(); 
 
+    let doc: HasFormatter;
 
+    type.value === 'invoice' 
+    ? 
+        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber)
+    :
+        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber) 
+
+        console.log(doc)
 })
