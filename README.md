@@ -1,1 +1,1 @@
-# Typsecript project for learning purpouses
+# Typsecript playground

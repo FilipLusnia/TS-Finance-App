@@ -1,0 +1,26 @@
+{
+  "name": "ts-finance-app",
+  "homepage": "https://github.com/FilipLusnia/TS-Finance-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipLusnia/TS-Finance-App.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
