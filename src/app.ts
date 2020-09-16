@@ -13,6 +13,8 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 const ul = document.querySelector('ul')!;
 const list = new ListTemplate(ul); 
 
+console.log("ee");
+
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault(); 
 
